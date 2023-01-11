@@ -1,12 +1,11 @@
 import '../App.css';
-import logo from '../images/logo.png';
 
 const Home = ()=>{
     return(
         <div className="home_main">
             <header>
                 <div className="home_sidebar">
-                    <div className="w50"><p className='logo'><span>{'<'}</span>Danki<span>.</span>Code<span>{'>'}</span></p></div>
+                    <div className="w50"><p className='logo'><span>{'<'}</span>Crisp<span>.</span>Code<span>{'>'}</span></p></div>
                     <div className="w50">
                         <ul>
                             <li><a href="/#">home</a></li>

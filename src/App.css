@@ -11,7 +11,10 @@
 .w50{
     width: 50%;
 }
-
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+}
 /* logo danki */
 .logo{
     color: white;
@@ -29,7 +32,7 @@
 .home_main{
     background-image: url(./images/capa.png);
     background-size: cover;
-    height: 100vh
+    height: 100vh;
 }
 .home_sidebar{
     padding: 40px 5%;
@@ -60,6 +63,7 @@
     margin-left: 40%;
     margin-top: 10%;
     padding: 2%;
+    padding-bottom: 15%;
 }
 .home_text .text_box p{
     text-align: justify;
@@ -71,6 +75,50 @@
     font-weight: 300;
     font-size: 50px;
 }
+/* fim home */
+/* description */
+.description_main{
+    background-color: #472663;
+    position: relative;
+    
+}
+.description_box{
+    padding: 60px 4%;
+    color: white;
+}
+.description_box .phone{
+    width: 600px;
+    height: 470px;
+    position: absolute;
+    background-image: url(./images/Phone.png);
+    background-size: 600px;
+    bottom: 0;
+    right: 5%;
+    background-repeat: no-repeat;
+}
+.description_box h1{
+    font-size: 35px;
+}
+.description_box ul{
+    margin: 40px 0;
+    list-style-position: inside;
+}
+.description_box a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FF703E;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1070px) {
+    .description_box .phone{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 700px) {
    .home_sidebar .w50 ul{
         display: none;
@@ -85,9 +133,11 @@
    }
    .home_text .text_box{
     margin: 0 auto;
+    padding-bottom: 30%;
     text-align: center;
+    vertical-align: middle;
    }
    .home_main{
-    height: 60vh;
+    height: auto;
    }
 }
