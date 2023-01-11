@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+/* tag unniversal */
+.w50{
+    width: 50%;
+}
+
+/* logo danki */
+.logo{
+    color: white;
+}
+.logo span{
+    color: #6153a5;
+    font-weight: 700;
+}
+/* fim logo danki */
+
+
+/* home */
+
+/* side bar */
+.home_main{
+    background-image: url(./images/capa.png);
+    background-size: cover;
+    height: 100vh
+}
+.home_sidebar{
+    padding: 40px 5%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.home_sidebar .w50 ul{
+    list-style-type: none;
+    text-align: end;
+}
+.home_sidebar .w50 ul li{
+    display: inline;
+    padding: 0 10px;   
+}
+.home_sidebar .w50 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.home_sidebar .w50 ul li:nth-child(1) a{
+    font-weight: 700;
+}
+/* fim side bar */
+/* titulo do home */
+.home_text .text_box{
+    color: white;
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 2%;
+}
+.home_text .text_box p{
+    text-align: justify;
+    font-size: 15px;
+    max-width: 65%;
+    font-weight: 300;
+}
+.home_text .text_box h1{
+    font-weight: 300;
+    font-size: 50px;
+}
+@media screen and (max-width: 700px) {
+   .home_sidebar .w50 ul{
+        display: none;
+   }
+   .home_text .text_box h1{
+    font-size: xx-large;
+   }
+   .home_text .text_box p{
+    max-width: 85%;
+    margin: 0 auto;
+
+   }
+   .home_text .text_box{
+    margin: 0 auto;
+    text-align: center;
+   }
+   .home_main{
+    height: 60vh;
+   }
+}
