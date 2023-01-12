@@ -11,9 +11,13 @@
 .w50{
     width: 50%;
 }
+.h50{
+    height: 50%;
+}
 .center{
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 /* logo danki */
 .logo{
@@ -93,7 +97,7 @@
     background-image: url(./images/Phone.png);
     background-size: 600px;
     bottom: 0;
-    right: 5%;
+    right: 1%;
     background-repeat: no-repeat;
 }
 .description_box h1{
@@ -112,9 +116,118 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 1070px) {
+/* person inicio */
+.person_main{
+    z-index: 1;
+    background-color:white;
+    min-width: min-content;
+}
+.person_text{
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+}
+.person_text h1{
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 40px;
+}
+.person_box{
+    background-color: #2B303B;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: -5px 47px 100px 0px rgba(0, 0, 0, 0.445);
+    -moz-box-shadow: -5px 47px 100px 0px rgba(0, 0, 0, 0.445);
+    box-shadow: -5px 47px 100px 0px rgba(0, 0, 0, 0.445);
+    height: 170px;
+    max-width: 600px;
+}
+/* polinhas claras */
+.person_box div{
+    position: absolute;
+    padding: 3px;
+    top: 12px;
+    background-color: #4c5568;
+    border-radius: 20px;
+}
+.person_box div:nth-child(1){
+    left: 10px;   
+}
+.person_box div:nth-child(2){
+    left: 20px;
+}
+.person_box div:nth-child(3){
+    left: 30px;
+}
+/* fim das bolinhas claras */
+/* imagem */
+.person_box img{
+    z-index: 2;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    max-height: 50vh;
+}
+/* fim person */
+
+/* inicio coments */
+.coments_main{
+    display: flex;
+    background-color: #ffffff;
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.back_right{
+    background-color: #F4F8FB;
+    width: 100%;
+    height: 100%;
+
+}
+.back_left{
+    background-color:  #835FA8;
+    width: 100%;
+    height: 100%;
+    padding: 30px 2%;
+    vertical-align: middle;
+    padding-top: 150px;
+    padding-left: 40%;
+    color: white;
+}
+.back_left h2{
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1115px) {
+    .home_main{
+        height: auto;
+    }
     .description_box .phone{
         display: none;
+    }
+    .person_box{
+        height: 150px;
+    }
+    .w50{
+        width: 100%;
+    }
+    .box_group{
+        padding: 20px 2%;
+        margin-left: 0;
+        padding-top: 30vw;
+    
+    }
+    .person_box {
+        height: auto;
+    }
+    .back_left{
+        padding: 60px 10%;
+        text-align: center;
     }
 }
 
