@@ -18,6 +18,8 @@
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* logo danki */
 .logo{
@@ -168,7 +170,7 @@
 /* fim das bolinhas claras */
 /* imagem */
 .person_box img{
-    z-index: 2;
+    z-index: 3;
     position: relative;
     top: 30px;
     width: 100%;
@@ -178,6 +180,8 @@
 
 /* inicio coments */
 .coments_main{
+    z-index: 2;
+    position: relative;
     display: flex;
     background-color: #ffffff;
     width: 100%; 
@@ -233,6 +237,7 @@
     height: 40px;
     padding: 0 10px;
     border-radius: 50%;
+    pointer-events: none;
 }
 .single_carrosel p{
     font-size: 12px;
@@ -240,6 +245,72 @@
     font-style: italic;
     max-width: 400px;
 }
+/* fim carrosel */
+/* inicio form */
+
+.form_main{
+    background-color: #472663;
+    padding: 3% 0;
+    color: white;
+}
+.form_box{
+    padding: 0 2%;
+}
+.form_box h1{
+    font-weight: 300;
+    padding: 30px 0;
+}
+.form_box p{
+    padding: 10px 0;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.form_box form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.form_box form input,.form_box textarea{
+    margin: 10px 0;
+    padding: 10px 2%;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+}
+.form_box form input::-webkit-input-placeholder,
+.form_box textarea::-webkit-input-placeholder{
+    color: #ACACAC;
+}
+
+.form_box form input[type="submit"]{
+    width: max-content;
+    background-color: #FF703E;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+}
+.container{
+    padding: 0 2%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container h1{
+    font-weight: 300;
+    padding: 30px 0;
+}
+.container .map_box{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1115px) {
     .home_main{
         height: auto;
@@ -274,8 +345,27 @@
     .back_right{
         padding: 3% 2%;
     }
-    
-
+    .form_box form{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .form_box{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .container{
+        text-align: center;
+    }
+    .container .map_box{
+        margin: 0 auto;
+    }
+    .form_box form input[type="submit"]{
+        margin: 0 auto;
+    }
+    .container{
+        padding: 3% 2%;
+    }
 }
 
 
