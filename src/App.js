@@ -4,7 +4,7 @@ import Description from './conponents/Description.js';
 import Person from './conponents/Person.js';
 import Coments from './conponents/Coments.js';
 import Form from './conponents/Form.js';
-
+import Footer from './conponents/Footer.js';
 function App() {
   return (
     <div className="App">
@@ -13,6 +13,7 @@ function App() {
       <Person/>
       <Coments/>
       <Form/>
+      <Footer/>
     </div>
   );
 }

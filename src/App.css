@@ -156,7 +156,7 @@
     padding: 3px;
     top: 12px;
     background-color: #4c5568;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .person_box div:nth-child(1){
     left: 10px;   
@@ -299,13 +299,23 @@
     padding: 30px 0;
 }
 .container .map_box{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     background-color: white;
 }
-
-
-
+/* fim do form */
+/* inicio do footer */
+footer{
+    background-color: #1A2124;
+    color: white;
+}
+footer h4{
+    padding: 40px 0;
+    font-weight: 400;
+}
+footer > .center > .w50:nth-child(2) > div > h4{
+    text-align: end;
+}
 
 
 
